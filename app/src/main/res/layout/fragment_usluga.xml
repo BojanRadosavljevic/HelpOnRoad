@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UslugaFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/clouds_paper_cut_clipart_with_transparent_background_for_decoration_of_art_file_free_png" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dodaj usluge"
+                android:gravity="center|top"
+                android:textColor="@color/black"
+                android:textSize="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/VULKANIZERSKE_USLUGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vulkanizerske usluge"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/VULKANIZERSKE_USLUGECena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="cena usluge"
+                android:inputType="number"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/ELEKTRONSKE_USLUGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elektronske usluge"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/ELEKTRONSKE_USLUGECena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="cena usluge"
+                android:inputType="number"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/MEHANICKE_USLUGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mehanicke usluge"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/MEHANICKE_USLUGECena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="cena usluge"
+                android:inputType="number"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/USLUGE_SLEPANJA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usluge slepanja"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/USLUGE_SLEPANJACena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="cena usluge"
+                android:inputType="number"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:gravity="bottom|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/UslugaCancel"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:text="Cancel"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/UslugaDodaj"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dodaj usluge"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragments.UserFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/clouds_paper_cut_clipart_with_transparent_background_for_decoration_of_art_file_free_png" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LogoutUser"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginEnd="70dp"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:textSize="40dp"></TextView>
+
+            <Button
+                android:id="@+id/UserRangList"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="Rang Lista"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/UserUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="175dp"
+                android:gravity="center"
+                android:hint="Type your username"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/UserNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:digits="0123456789+"
+                android:gravity="center"
+                android:hint="Type your phone number"
+                android:inputType="phone"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/UserChangeInfo"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promeni informacije"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/UserDeleteAccount"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obrisi nalog"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/UserPrijaviKvar"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="100dp"
+                android:text="Prijavi Kvar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/UserPronadjiRadnju"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Pronadji radnju"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

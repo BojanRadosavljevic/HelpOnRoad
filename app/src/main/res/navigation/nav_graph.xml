@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment3">
+    <fragment
+        android:id="@+id/homeFragment3"
+        android:name="elfak.mosis.helponroad.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment3_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="elfak.mosis.helponroad.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+        <action
+            android:id="@+id/action_loginFragment_to_radnjaFragment"
+            app:destination="@id/radnjaFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="elfak.mosis.helponroad.Fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+        <action
+            android:id="@+id/action_registerFragment_to_radnjaFragment"
+            app:destination="@id/radnjaFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radnjaFragment"
+        android:name="elfak.mosis.helponroad.Fragments.RadnjaFragment"
+        android:label="fragment_radnja"
+        tools:layout="@layout/fragment_radnja" >
+        <action
+            android:id="@+id/action_radnjaFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+        <action
+            android:id="@+id/action_radnjaFragment_to_uslugaFragment"
+            app:destination="@id/uslugaFragment" />
+        <action
+            android:id="@+id/action_radnjaFragment_to_ranglistFragment"
+            app:destination="@id/ranglistFragment" />
+        <action
+            android:id="@+id/action_radnjaFragment_to_promenilokacijuFragment"
+            app:destination="@id/promenilokacijuFragment" />
+        <action
+            android:id="@+id/action_radnjaFragment_to_pronadjikvarFragment"
+            app:destination="@id/pronadjikvarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="elfak.mosis.helponroad.Fragments.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+        <action
+            android:id="@+id/action_userFragment_to_ranglistFragment"
+            app:destination="@id/ranglistFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_prijavikvarFragment"
+            app:destination="@id/prijavikvarFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_pronadjiradnjuFragment"
+            app:destination="@id/pronadjiradnjuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uslugaFragment"
+        android:name="elfak.mosis.helponroad.Fragments.UslugaFragment"
+        android:label="fragment_usluga"
+        tools:layout="@layout/fragment_usluga" >
+        <action
+            android:id="@+id/action_uslugaFragment_to_radnjaFragment"
+            app:destination="@id/radnjaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ranglistFragment"
+        android:name="elfak.mosis.helponroad.Fragments.RanglistFragment"
+        android:label="fragment_ranglist"
+        tools:layout="@layout/fragment_ranglist" >
+        <action
+            android:id="@+id/action_ranglistFragment_to_ranglisthelperFragment"
+            app:destination="@id/ranglisthelperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ranglisthelperFragment"
+        android:name="elfak.mosis.helponroad.Fragments.RanglisthelperFragment"
+        android:label="fragment_ranglisthelper"
+        tools:layout="@layout/fragment_ranglisthelper" />
+    <fragment
+        android:id="@+id/prijavikvarFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PrijavikvarFragment"
+        android:label="fragment_prijavikvar"
+        tools:layout="@layout/fragment_prijavikvar" >
+        <action
+            android:id="@+id/action_prijavikvarFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promenilokacijuFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PromenilokacijuFragment"
+        android:label="fragment_promenilokaciju"
+        tools:layout="@layout/fragment_promenilokaciju" >
+        <action
+            android:id="@+id/action_promenilokacijuFragment_to_radnjaFragment"
+            app:destination="@id/radnjaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pronadjiradnjuFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PronadjiradnjuFragment"
+        android:label="fragment_pronadjiradnju"
+        tools:layout="@layout/fragment_pronadjiradnju" >
+
+        <action
+            android:id="@+id/action_pronadjiradnjuFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_pronadjiradnjuFragment_to_prikaziradnjeFragment"
+            app:destination="@id/prikaziradnjeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prikaziradnjeFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PrikaziradnjeFragment"
+        android:label="fragment_prikaziradnje"
+        tools:layout="@layout/fragment_prikaziradnje" >
+        <action
+            android:id="@+id/action_prikaziradnjeFragment_to_radnjaTagFragment"
+            app:destination="@id/radnjaTagFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radnjaTagFragment"
+        android:name="elfak.mosis.helponroad.Fragments.RadnjaTagFragment"
+        android:label="fragment_radnja_tag"
+        tools:layout="@layout/fragment_radnja_tag" >
+
+
+        <action
+            android:id="@+id/action_radnjaTagFragment_to_komentarFragment"
+            app:destination="@id/komentarFragment" />
+        <action
+            android:id="@+id/action_radnjaTagFragment_to_uslugetagFragment"
+            app:destination="@id/uslugetagFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/komentarFragment"
+        android:name="elfak.mosis.helponroad.Fragments.KomentarFragment"
+        android:label="fragment_komentar"
+        tools:layout="@layout/fragment_komentar" >
+        <action
+            android:id="@+id/action_komentarFragment_to_radnjaTagFragment"
+            app:destination="@id/radnjaTagFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/uslugetagFragment"
+        android:name="elfak.mosis.helponroad.Fragments.UslugetagFragment"
+        android:label="fragment_uslugetag"
+        tools:layout="@layout/fragment_uslugetag" />
+    <fragment
+        android:id="@+id/pronadjikvarFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PronadjikvarFragment"
+        android:label="fragment_pronadjikvar"
+        tools:layout="@layout/fragment_pronadjikvar" >
+        <action
+            android:id="@+id/action_pronadjikvarFragment_to_radnjaFragment"
+            app:destination="@id/radnjaFragment" />
+        <action
+            android:id="@+id/action_pronadjikvarFragment_to_prikazikvaroveFragment"
+            app:destination="@id/prikazikvaroveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prikazikvaroveFragment"
+        android:name="elfak.mosis.helponroad.Fragments.PrikazikvaroveFragment"
+        android:label="fragment_prikazikvarove"
+        tools:layout="@layout/fragment_prikazikvarove" >
+        <action
+            android:id="@+id/action_prikazikvaroveFragment_to_pronadjikvarFragment"
+            app:destination="@id/pronadjikvarFragment" />
+    </fragment>
+</navigation>

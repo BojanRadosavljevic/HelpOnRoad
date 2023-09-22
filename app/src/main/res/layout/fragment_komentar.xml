@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.KomentarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ListView
+        android:id="@+id/KomentariListView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/Komentar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="Unesite komentar:"></EditText>
+            <Button
+                android:id="@+id/Dodaj"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:textColor="#000000"
+                android:text="Dodaj"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
