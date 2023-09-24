@@ -213,7 +213,9 @@ class UsersViewModel :ViewModel() {
             val fileRef = storageRef.child(userId).delete()
         }
         databaseUser!!.child(userId).removeValue().addOnSuccessListener {
-            Log.d("aaa", "uspesno izbrisan user")
+            firebaseAuth.currentUser!!.delete().addOnCompleteListener {
+                Log.d("aaa", "uspesno izbrisan user")
+            }
         }
     }
 
@@ -226,7 +228,9 @@ class UsersViewModel :ViewModel() {
                 FirebaseDatabase.getInstance("https://helponroad-8c6fe-default-rtdb.europe-west1.firebasedatabase.app/")
                     .getReference("usluga")
             databaseUser2!!.child(shopId).removeValue().addOnSuccessListener {
-                Log.d("aaa", "izbrisana dodata usluga")
+                firebaseAuth.currentUser!!.delete().addOnCompleteListener {
+                    Log.d("aaa", "uspesno izbrisan user")
+                }
             }
         }
     }
